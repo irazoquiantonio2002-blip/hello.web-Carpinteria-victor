@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Técnico -->
+  <title>Carpintería Victor | Muebles a Medida para el Hogar</title>
+  <meta name="description" content="Diseño, fabricación e instalación de closets, puertas y muebles de cocina a medida. Carpintería Victor crea soluciones funcionales, contemporáneas y personalizadas para tu hogar." />
+  <meta name="keywords" content="Carpintería Victor, muebles a medida, closets a medida, cocinas integrales, puertas de madera, carpintería residencial, diseño de muebles" />
+  <meta name="author" content="Carpintería Victor" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Carpintería Victor | Muebles a Medida para el Hogar" />
+  <meta property="og:description" content="Closets, puertas y muebles de cocina fabricados a medida con asesoría personalizada, materiales de calidad y acabados contemporáneos." />
+  <meta property="og:url"         content="https://carpinteriavictor.com" />
+  <meta property="og:locale"      content="es_MX" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon: monograma de marca -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect x='14' y='14' width='172' height='172' rx='42' fill='%23222622'/%3E%3Cpath d='M48 55h104v90H48z' fill='none' stroke='%23C6A15B' stroke-width='10'/%3E%3Cpath d='M75 61v78M125 61v78' stroke='%23F7F3EC' stroke-width='8'/%3E%3Cpath d='M55 153h90' stroke='%23C6A15B' stroke-width='10' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+
+<body>
+
+<!-- ================================
+     LOGO DE MARCA (SVG inline)
+================================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="logo-mark" viewBox="0 0 200 200">
+      <rect x="12" y="12" width="176" height="176" rx="42" fill="var(--grafito)" />
+      <path d="M48 55h104v90H48z" fill="none" stroke="var(--laton)" stroke-width="10" />
+      <path d="M75 61v78M125 61v78" stroke="var(--marfil)" stroke-width="8" stroke-linecap="round" />
+      <path d="M55 153h90" stroke="var(--laton)" stroke-width="10" stroke-linecap="round" />
+      <text x="100" y="113" text-anchor="middle" font-size="42" font-weight="800" font-family="Inter, Arial, sans-serif" fill="var(--marfil)">CV</text>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ================================
+     LOADER
+================================ -->
+<div id="loader" aria-hidden="true">
+  <svg class="loader-logo" role="img" aria-label="Carpintería Victor"><use href="#logo-mark"></use></svg>
+  <div class="loader-bar-wrap">
+    <div class="loader-bar" id="loader-bar"></div>
+  </div>
+  <p class="loader-text">Preparando acabados...</p>
+</div>
+
+<!-- ================================
+     MENÚ MÓVIL
+================================ -->
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <button id="menu-close" class="mobile-menu-close" aria-label="Cerrar menú">x</button>
+  <a href="#menu">Servicios</a>
+  <a href="#beneficios">Diferenciales</a>
+  <a href="#servicios">Proceso</a>
+  <a href="#contacto">Cotización</a>
+</div>
+
+<!-- ================================
+     NAVBAR
+================================ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="#" class="navbar-brand" aria-label="Ir al inicio">
+    <svg role="img" aria-label="Logo Carpintería Victor"><use href="#logo-mark"></use></svg>
+    Carpintería Victor
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#menu">Servicios</a></li>
+    <li><a href="#beneficios">Diferenciales</a></li>
+    <li><a href="#servicios">Proceso</a></li>
+    <li><a href="#experiencia">Proyectos</a></li>
+    <li><a href="#contacto" class="nav-cta">Cotizar Proyecto</a></li>
+  </ul>
+
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ================================
+     HERO — Full Screen
+================================ -->
+<header class="hero" id="inicio">
+
+  <!-- Marca de agua centrada -->
+  <div class="hero-watermark" aria-hidden="true">
+    <svg><use href="#logo-mark"></use></svg>
+  </div>
+
+  <!-- Gradiente radial sutil -->
+  <div class="hero-gradient" aria-hidden="true"></div>
+
+  <!-- Partículas JS -->
+  <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
+
+  <!-- Doodles decorativos -->
+  <span class="hero-doodle" style="top:12%; left:6%;"  aria-hidden="true">CLOSETS</span>
+  <span class="hero-doodle" style="top:18%; right:8%;" aria-hidden="true">COCINAS</span>
+  <span class="hero-doodle" style="bottom:20%; left:5%;" aria-hidden="true">PUERTAS</span>
+  <span class="hero-doodle" style="bottom:28%; right:6%;" aria-hidden="true">DISEÑO</span>
+
+  <!-- Contenido centrado -->
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      Carpintería residencial a medida
+    </div>
+
+    <h1 class="hero-title">
+      <span class="word">Muebles</span>
+      <span class="word gold">a medida</span>
+      <span class="word">para</span>
+      <span class="word gold">tu hogar</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Diseñamos, fabricamos e instalamos closets, puertas y muebles de cocina con soluciones personalizadas, materiales de primera línea y acabados contemporáneos.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#contacto" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" width="18" fill="none" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 016.5 3h11A2.5 2.5 0 0120 5.5v8a2.5 2.5 0 01-2.5 2.5H9l-5 5v-5.5A2.5 2.5 0 011.5 13v-7.5A2.5 2.5 0 014 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Solicitar Cotización
+      </a>
+      <a href="#menu" class="btn btn-outline">Ver Servicios</a>
+    </div>
+
+  </div>
+
+  <!-- Indicador de scroll -->
+  <div class="scroll-indicator" id="scroll-indicator">
+    <span>Desliza</span>
+    <div class="scroll-mouse"></div>
+  </div>
+
+</header>
+
+<!-- ================================
+     STATS BAR
+================================ -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-num" data-target="100" data-suffix="%">0</span>
+      <span class="stat-label">Diseñado para tu espacio</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="3">0</span>
+      <span class="stat-label">Líneas principales de servicio</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="4">0</span>
+      <span class="stat-label">Etapas de trabajo claras</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="1">0</span>
+      <span class="stat-label">Proyecto pensado alrededor de ti</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================================
+     MENÚ / SERVICIOS
+================================ -->
+<section class="section-menu" id="menu">
+  <div class="section-header">
+    <div class="section-tag">Servicios especializados</div>
+    <br/><br/>
+    <h2 class="section-title">Soluciones de carpintería para cada área del hogar</h2>
+  </div>
+
+  <!-- Filtros de categoría -->
+  <div class="menu-filters reveal fade-up">
+    <button class="menu-filter active" data-cat="all">Todo</button>
+    <button class="menu-filter" data-cat="closets">Closets</button>
+    <button class="menu-filter" data-cat="cocinas">Cocinas</button>
+    <button class="menu-filter" data-cat="puertas">Puertas</button>
+  </div>
+
+  <div class="menu-grid">
+
+    <article class="menu-card reveal fade-up" data-cat="closets">
+      <img src="AC6026967C0E7347BDF2479DB3886719.jpeg" alt="Closet grafito fabricado a medida por Carpintería Victor" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Closets a medida</span>
+        <h3 class="menu-card-name">Closets de piso a techo</h3>
+        <p class="menu-card-desc">Diseños que aprovechan cada centímetro con distribución inteligente, puertas corredizas o abatibles y acabados sobrios.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">A medida</span>
+          <span class="menu-card-price-alt">Diseño + fabricación</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="closets" style="transition-delay:.08s">
+      <img src="AC678FBD8FF63594C5BE8AFD1C9E9864.jpeg" alt="Closet con puertas corredizas y repisas interiores" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Organización interior</span>
+        <h3 class="menu-card-name">Vestidores y repisas</h3>
+        <p class="menu-card-desc">Interiores planeados para ropa, blancos, accesorios y almacenamiento diario sin perder orden visual.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">Funcional</span>
+          <span class="menu-card-price-alt">Optimización de espacio</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="cocinas" style="transition-delay:.16s">
+      <img src="AC12D6753C70DF79F2B60E2060E29AA1.jpeg" alt="Mueble de cocina en acabado oscuro con cubierta clara" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Cocinas</span>
+        <h3 class="menu-card-name">Muebles bajo cubierta</h3>
+        <p class="menu-card-desc">Módulos resistentes y limpios para integrar almacenamiento, cajones y puertas con una imagen moderna.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">Durable</span>
+          <span class="menu-card-price-alt">Materiales de calidad</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="puertas" style="transition-delay:.24s">
+      <img src="AC2F4856E6F81D0C6D621564713BD721.jpeg" alt="Puertas interiores en tono grafito instaladas en vivienda" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Puertas</span>
+        <h3 class="menu-card-name">Puertas interiores</h3>
+        <p class="menu-card-desc">Fabricación e instalación de puertas con líneas limpias, proporciones cuidadas y acabado acorde al estilo del hogar.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">Preciso</span>
+          <span class="menu-card-price-alt">Medición e instalación</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="closets" style="transition-delay:.08s">
+      <img src="AC804B477B9F5E931CAA63460D6EB4C3.jpeg" alt="Closet oscuro con puertas corredizas y área auxiliar" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Diseño contemporáneo</span>
+        <h3 class="menu-card-name">Frentes limpios</h3>
+        <p class="menu-card-desc">Superficies elegantes, herrajes discretos y soluciones visuales que se integran con recámaras y pasillos.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">Elegante</span>
+          <span class="menu-card-price-alt">Acabado personalizado</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="closets" style="transition-delay:.16s">
+      <img src="ACA68B4897B7DA83280B7EA6D3C37520.jpeg" alt="Closet amplio en acabado grafito con puertas corredizas" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Proyectos completos</span>
+        <h3 class="menu-card-name">Clósets amplios</h3>
+        <p class="menu-card-desc">Soluciones robustas para habitaciones principales, con estructura estable y una presencia visual sobria.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">Integral</span>
+          <span class="menu-card-price-alt">De idea a instalación</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================================
+     BENEFICIOS
+================================ -->
+<section class="section-benefits" id="beneficios">
+  <div class="section-header">
+    <div class="section-tag section-tag-dark">Por qué Carpintería Victor</div>
+    <br/><br/>
+    <h2 class="section-title section-title-dark">Artesanía detallada con una visión práctica del hogar</h2>
+  </div>
+
+  <div class="benefits-grid">
+
+    <div class="benefit-card reveal scale-in">
+      <span class="benefit-icon">01</span>
+      <div class="benefit-title">Diseño personalizado</div>
+      <p class="benefit-desc">Cada mueble se ajusta a tus medidas, necesidades de uso y estilo de vivienda.</p>
+    </div>
+
+    <div class="benefit-card reveal scale-in" style="transition-delay:.08s">
+      <span class="benefit-icon">02</span>
+      <div class="benefit-title">Materiales seleccionados</div>
+      <p class="benefit-desc">Se priorizan piezas resistentes, herrajes adecuados y acabados pensados para el uso diario.</p>
+    </div>
+
+    <div class="benefit-card reveal scale-in" style="transition-delay:.16s">
+      <span class="benefit-icon">03</span>
+      <div class="benefit-title">Funcionalidad real</div>
+      <p class="benefit-desc">La distribución interior se planea para ordenar mejor, circular mejor y aprovechar mejor.</p>
+    </div>
+
+    <div class="benefit-card reveal scale-in" style="transition-delay:.24s">
+      <span class="benefit-icon">04</span>
+      <div class="benefit-title">Acabado contemporáneo</div>
+      <p class="benefit-desc">Líneas limpias, tonos sobrios y detalles que elevan el espacio sin saturarlo.</p>
+    </div>
+
+    <div class="benefit-card reveal scale-in" style="transition-delay:.32s">
+      <span class="benefit-icon">05</span>
+      <div class="benefit-title">Asesoría cercana</div>
+      <p class="benefit-desc">Acompañamiento para decidir medidas, materiales, apertura, almacenamiento y estilo final.</p>
+    </div>
+
+    <div class="benefit-card reveal scale-in" style="transition-delay:.4s">
+      <span class="benefit-icon">06</span>
+      <div class="benefit-title">Instalación cuidada</div>
+      <p class="benefit-desc">Montaje con atención al ajuste, nivelación y detalles visibles del resultado final.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================
+     SERVICIOS & PROCESO
+================================ -->
+<section class="section-services" id="servicios">
+  <div class="section-header">
+    <div class="section-tag">Cómo trabajamos</div>
+    <br/><br/>
+    <h2 class="section-title">Un proceso claro para convertir tu espacio en un mueble útil</h2>
+  </div>
+
+  <div class="services-inner">
+
+    <!-- Tarjetas de servicio -->
+    <div class="services-cards">
+
+      <div class="service-item reveal fade-left">
+        <span class="service-item-icon">01</span>
+        <div class="service-item-title">Asesoría inicial</div>
+        <p class="service-item-text">Escuchamos qué necesitas guardar, resolver o renovar y definimos una ruta de diseño.</p>
+      </div>
+
+      <div class="service-item reveal fade-left" style="transition-delay:.1s">
+        <span class="service-item-icon">02</span>
+        <div class="service-item-title">Medición del espacio</div>
+        <p class="service-item-text">Revisamos proporciones, muros, alturas y restricciones para fabricar con precisión.</p>
+      </div>
+
+      <div class="service-item reveal fade-left" style="transition-delay:.2s">
+        <span class="service-item-icon">03</span>
+        <div class="service-item-title">Fabricación</div>
+        <p class="service-item-text">Construimos cada módulo cuidando estructura, terminación, herrajes y consistencia visual.</p>
+      </div>
+
+      <div class="service-item reveal fade-left" style="transition-delay:.3s">
+        <span class="service-item-icon">04</span>
+        <div class="service-item-title">Instalación final</div>
+        <p class="service-item-text">Montamos, ajustamos y verificamos que el mueble quede listo para el uso cotidiano.</p>
+      </div>
+
+    </div>
+
+    <!-- Alcance -->
+    <div class="reveal fade-right">
+      <div class="section-tag process-tag">Alcance de proyectos</div>
+      <div class="horarios-table sticker">
+        <div class="horarios-row header">
+          <span>Área</span>
+          <span>Solución</span>
+        </div>
+        <div class="horarios-row">
+          <span class="dia">Recámaras</span>
+          <span class="hora">Closets, vestidores y módulos interiores</span>
+        </div>
+        <div class="horarios-row">
+          <span class="dia">Cocinas</span>
+          <span class="hora">Gabinetes, cajones y muebles bajo cubierta</span>
+        </div>
+        <div class="horarios-row">
+          <span class="dia">Interiores</span>
+          <span class="hora">Puertas, marcos y soluciones de almacenamiento</span>
+        </div>
+        <div class="horarios-row highlighted">
+          <span>Personalización</span>
+          <span>Medidas, acabado y distribución a tu estilo</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================
+     VIVE LA EXPERIENCIA
+================================ -->
+<section class="section-reviews" id="experiencia">
+  <div class="section-header">
+    <div class="section-tag section-tag-dark">Proyectos con intención</div>
+    <br/><br/>
+    <h2 class="section-title section-title-dark">Detalles que distinguen el resultado final</h2>
+  </div>
+
+  <div class="reviews-grid">
+
+    <div class="review-card reveal">
+      <div class="review-stars">Medición</div>
+      <p class="review-text">El proyecto parte de las dimensiones reales del hogar para evitar muebles genéricos y espacios desperdiciados.</p>
+      <div class="review-author">
+        <div class="review-avatar">M</div>
+        <div>
+          <div class="review-name">Ajuste preciso</div>
+          <div class="review-source">Trabajo a medida</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay:.1s">
+      <div class="review-stars">Acabado</div>
+      <p class="review-text">La paleta sobria y los herrajes metálicos ayudan a crear ambientes modernos, ordenados y fáciles de combinar.</p>
+      <div class="review-author">
+        <div class="review-avatar">A</div>
+        <div>
+          <div class="review-name">Imagen contemporánea</div>
+          <div class="review-source">Diseño residencial</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay:.2s">
+      <div class="review-stars">Uso</div>
+      <p class="review-text">Cada repisa, cajón y puerta responde a una necesidad concreta: guardar mejor, acceder fácil y vivir con más orden.</p>
+      <div class="review-author">
+        <div class="review-avatar">U</div>
+        <div>
+          <div class="review-name">Funcionalidad diaria</div>
+          <div class="review-source">Diseño centrado en el hogar</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay:.3s">
+      <div class="review-stars">Servicio</div>
+      <p class="review-text">La asesoría personalizada permite tomar mejores decisiones antes de fabricar e instalar.</p>
+      <div class="review-author">
+        <div class="review-avatar">S</div>
+        <div>
+          <div class="review-name">Acompañamiento cercano</div>
+          <div class="review-source">De idea a entrega</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================
+     CONTACTO & MAPA
+================================ -->
+<section class="section-contact" id="contacto">
+  <div class="section-header">
+    <div class="section-tag">Cotiza tu proyecto</div>
+    <br/><br/>
+    <h2 class="section-title">Cuéntanos qué mueble necesita tu hogar</h2>
+  </div>
+
+  <div class="contact-inner">
+
+    <!-- Formulario -->
+    <div>
+      <form class="contact-form sticker-lg" id="contact-form">
+        <h3 class="form-title">Solicitar asesoría</h3>
+
+        <div class="form-group">
+          <label class="form-label" for="nombre">Nombre</label>
+          <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="telefono">Teléfono / WhatsApp</label>
+          <input class="form-input" type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="asunto">Tipo de proyecto</label>
+          <input class="form-input" type="text" id="asunto" name="asunto" placeholder="Ej. Closet, cocina, puerta o mueble especial" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="mensaje">Mensaje</label>
+          <textarea class="form-textarea" id="mensaje" name="mensaje" placeholder="Cuéntanos medidas aproximadas, área del hogar y acabado deseado"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary form-submit">
+          Preparar Mensaje
+        </button>
+      </form>
+    </div>
+
+    <!-- Info + Mapa -->
+    <div class="contact-side">
+
+      <!-- Info de contacto -->
+      <div class="contact-info">
+
+        <div class="contact-info-item sticker">
+          <span class="contact-info-icon">01</span>
+          <div class="contact-info-text">
+            <div class="contact-info-label">Atención personalizada</div>
+            Comparte fotos, medidas aproximadas y referencias de estilo para recibir una orientación más precisa.
+          </div>
+        </div>
+
+        <div class="contact-info-item sticker">
+          <span class="contact-info-icon">02</span>
+          <div class="contact-info-text">
+            <div class="contact-info-label">Servicios</div>
+            Closets a medida, puertas, muebles de cocina, repisas, módulos y soluciones de almacenamiento.
+          </div>
+        </div>
+
+        <div class="contact-info-item sticker">
+          <span class="contact-info-icon">03</span>
+          <div class="contact-info-text">
+            <div class="contact-info-label">Qué incluir en tu solicitud</div>
+            Área del hogar, medidas aproximadas, acabado deseado y fecha ideal para iniciar.
+          </div>
+        </div>
+
+        <div class="contact-info-item sticker">
+          <span class="contact-info-icon">04</span>
+          <div class="contact-info-text">
+            <div class="contact-info-label">Contacto directo</div>
+            Agenda una asesoría para revisar tu espacio, definir materiales y preparar una propuesta a medida.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mapa (pendiente de ubicación real) -->
+      <div class="contact-map sticker-lg contact-map-placeholder">
+        <span class="map-placeholder-icon">CV</span>
+        <p class="map-placeholder-text">Atención enfocada en proyectos residenciales: closets, cocinas, puertas y muebles especiales diseñados para tu hogar.</p>
+        <a href="#contact-form" class="btn btn-primary">
+          Llenar Solicitud
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     FOOTER
+================================ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand-wrap">
+      <svg role="img" aria-label="Logo Carpintería Victor"><use href="#logo-mark"></use></svg>
+      <div>
+        <div class="footer-brand">Carpintería Victor</div>
+        <p class="footer-tagline">Muebles a medida, acabados sobrios y soluciones funcionales para el hogar.</p>
+      </div>
+    </div>
+
+    <div class="footer-center">
+      <ul class="footer-links">
+        <li><a href="#menu">Servicios</a></li>
+        <li><a href="#beneficios">Diferenciales</a></li>
+        <li><a href="#servicios">Proceso</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="#contacto" class="footer-social-icon" aria-label="Solicitar cotización">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 7h14M5 12h14M5 17h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <a href="#inicio" class="footer-social-icon" aria-label="Volver al inicio">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5m0 0l-6 6m6-6l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <p class="footer-copy">© 2026 Carpintería Victor. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ================================
+     BOTÓN FLOTANTE
+================================ -->
+<a href="#contacto" class="wa-float" aria-label="Solicitar cotización">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none">
+    <path d="M4 5.5A2.5 2.5 0 016.5 3h11A2.5 2.5 0 0120 5.5v8a2.5 2.5 0 01-2.5 2.5H9l-5 5v-5.5A2.5 2.5 0 011.5 13v-7.5A2.5 2.5 0 014 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  Cotizar
+</a>
+
+<!-- Anime.js desde CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<!-- Lógica & animaciones -->
+<script src="main.js"></script>
+
+</body>
+</html>
